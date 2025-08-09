@@ -56,7 +56,7 @@ const Hero = () => (
 
 // Tag component
 const Tag = ({ icon: Icon, text }: { icon: any, text: string }) => (
-  <div className="inline-flex items-center gap-1 px-2 py-2 bg-black/2 border border-black/10 rounded-md">
+  <div className="inline-flex items-center gap-1 px-2 py-2 bg-black/[0.02] border border-black/10 rounded-md">
     <Icon className="w-3.5 h-3.5 text-black/70" />
     <span className="text-xs text-black/70 font-nunito">{text}</span>
   </div>
@@ -238,7 +238,7 @@ export default function Index() {
       <FeatureSection 
         tag="Type of use"
         title="Explore Mode"
-        description="Pasea sin mapas. Romeo detecta tu ubicación y te cuenta lo que nadie te explicó de cada calle. As�� de fácil."
+        description="Pasea sin mapas. Romeo detecta tu ubicación y te cuenta lo que nadie te explicó de cada calle. Así de fácil."
         images={[
           "https://api.builder.io/api/v1/image/assets/TEMP/cae8784647701c33b2c076a508834c837ec4a52d?width=800",
           "https://api.builder.io/api/v1/image/assets/TEMP/f8558eb4847026d35e970f7819db2f7244f1ca49?width=800"
