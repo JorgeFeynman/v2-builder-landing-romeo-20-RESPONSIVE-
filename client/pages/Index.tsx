@@ -238,7 +238,7 @@ export default function Index() {
       <FeatureSection 
         tag="Type of use"
         title="Explore Mode"
-        description="Pasea sin mapas. Romeo detecta tu ubicación y te cuenta lo que nadie te explicó de cada calle. Así de fácil."
+        description="Wander without maps. Romeo detects your location and tells you what no one ever explained about each street. Simple as that."
         images={[
           "https://api.builder.io/api/v1/image/assets/TEMP/cae8784647701c33b2c076a508834c837ec4a52d?width=800",
           "https://api.builder.io/api/v1/image/assets/TEMP/f8558eb4847026d35e970f7819db2f7244f1ca49?width=800"
