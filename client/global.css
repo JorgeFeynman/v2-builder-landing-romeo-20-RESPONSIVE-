@@ -108,4 +108,8 @@
   .text-shadow-lg {
     text-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
   }
+
+  .bg-hero-fallback {
+    background: linear-gradient(135deg, #ff6201 0%, #e55601 100%);
+  }
 }
