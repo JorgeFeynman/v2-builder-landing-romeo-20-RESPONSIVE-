@@ -7,25 +7,55 @@ const Navigation = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center h-16">
         <div className="flex items-center">
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/7e82dd3fb9765a29c4a1201a3b986cde6068e52c?width=224" 
-            alt="Romeo Travel" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/7e82dd3fb9765a29c4a1201a3b986cde6068e52c?width=224"
+            alt="Romeo Travel"
             className="h-8 w-auto"
           />
         </div>
         <div className="hidden md:block">
           <div className="ml-10 flex items-baseline space-x-4">
-            <a href="#" className="text-gray-900 hover:text-romeo-orange px-3 py-2 text-sm font-medium font-nunito">Home</a>
-            <a href="#features" className="text-gray-700 hover:text-romeo-orange px-3 py-2 text-sm font-medium font-nunito">Features</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-romeo-orange px-3 py-2 text-sm font-medium font-nunito">Reviews</a>
-            <a href="#faq" className="text-gray-700 hover:text-romeo-orange px-3 py-2 text-sm font-medium font-nunito">FAQ</a>
+            <a
+              href="#"
+              className="text-gray-900 hover:text-romeo-orange px-3 py-2 text-sm font-medium font-nunito"
+            >
+              Home
+            </a>
+            <a
+              href="#features"
+              className="text-gray-700 hover:text-romeo-orange px-3 py-2 text-sm font-medium font-nunito"
+            >
+              Features
+            </a>
+            <a
+              href="#testimonials"
+              className="text-gray-700 hover:text-romeo-orange px-3 py-2 text-sm font-medium font-nunito"
+            >
+              Reviews
+            </a>
+            <a
+              href="#faq"
+              className="text-gray-700 hover:text-romeo-orange px-3 py-2 text-sm font-medium font-nunito"
+            >
+              FAQ
+            </a>
           </div>
         </div>
         <div className="md:hidden">
           <button className="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100">
             <span className="sr-only">Open menu</span>
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8h18M3 16h18" />
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.5}
+                d="M3 8h18M3 16h18"
+              />
             </svg>
           </button>
         </div>
@@ -36,16 +66,22 @@ const Navigation = () => (
 
 // Hero section
 const Hero = () => (
-  <section className="relative min-h-screen flex items-center justify-center bg-cover bg-center" 
-           style={{backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/ae850bd0b861b56bb5725dbc93d2e78dc3ba327d?width=2500')"}}>
+  <section
+    className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
+    style={{
+      backgroundImage:
+        "url('https://api.builder.io/api/v1/image/assets/TEMP/ae850bd0b861b56bb5725dbc93d2e78dc3ba327d?width=2500')",
+    }}
+  >
     <div className="absolute inset-0 bg-black/20"></div>
     <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h1 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-medium text-white font-poppins mb-8 leading-tight">
         Your tour guide's name is Romeo
       </h1>
       <p className="text-lg sm:text-xl lg:text-2xl text-white font-nunito mb-8 max-w-4xl mx-auto leading-relaxed text-shadow-lg">
-        A voice-guided tour app that leads you through the streets and tells you the story of each place in real time. 
-        Ask questions, walk around, and choose between Explorer Mode and Guided Routes.
+        A voice-guided tour app that leads you through the streets and tells you
+        the story of each place in real time. Ask questions, walk around, and
+        choose between Explorer Mode and Guided Routes.
       </p>
       <button className="bg-[#FF6201] text-white px-8 py-3 rounded-full font-nunito font-semibold text-sm border border-white/20 hover:bg-[#e55601] transition-colors">
         Download on iOS
@@ -55,7 +91,7 @@ const Hero = () => (
 );
 
 // Tag component
-const Tag = ({ icon: Icon, text }: { icon: any, text: string }) => (
+const Tag = ({ icon: Icon, text }: { icon: any; text: string }) => (
   <div className="inline-flex items-center gap-1 px-2 py-2 bg-black/[0.02] border border-black/10 rounded-md">
     <Icon className="w-3.5 h-3.5 text-black/70" />
     <span className="text-xs text-black/70 font-nunito">{text}</span>
@@ -63,13 +99,13 @@ const Tag = ({ icon: Icon, text }: { icon: any, text: string }) => (
 );
 
 // Feature section
-const FeatureSection = ({ 
-  tag, 
-  title, 
-  description, 
-  images, 
-  reverse = false 
-}: { 
+const FeatureSection = ({
+  tag,
+  title,
+  description,
+  images,
+  reverse = false,
+}: {
   tag: string;
   title: string;
   description: string;
@@ -89,10 +125,10 @@ const FeatureSection = ({
       </div>
       <div className="flex flex-wrap justify-center gap-8 mb-12">
         {images.map((src, index) => (
-          <img 
+          <img
             key={index}
-            src={src} 
-            alt="" 
+            src={src}
+            alt=""
             className="w-80 h-80 lg:w-96 lg:h-96 rounded-3xl object-cover"
           />
         ))}
@@ -111,14 +147,16 @@ const FeatureCard = ({
   title,
   description,
   image,
-  large = false
+  large = false,
 }: {
   title: string;
   description: string;
   image: string;
   large?: boolean;
 }) => (
-  <div className={`bg-black/[0.02] border border-black/10 rounded-3xl p-8 flex flex-col ${large ? 'md:col-span-2' : ''}`}>
+  <div
+    className={`bg-black/[0.02] border border-black/10 rounded-3xl p-8 flex flex-col ${large ? "md:col-span-2" : ""}`}
+  >
     <div className="mb-6">
       <h3 className="text-xl font-bold text-black font-nunito mb-1">{title}</h3>
       <p className="text-sm text-black/50 font-nunito">{description}</p>
@@ -130,12 +168,12 @@ const FeatureCard = ({
 );
 
 // Testimonial card
-const TestimonialCard = ({ 
-  name, 
-  location, 
-  comment, 
-  avatar 
-}: { 
+const TestimonialCard = ({
+  name,
+  location,
+  comment,
+  avatar,
+}: {
   name: string;
   location: string;
   comment: string;
@@ -143,20 +181,28 @@ const TestimonialCard = ({
 }) => (
   <div className="bg-white border border-black/10 rounded-3xl p-4">
     <div className="flex items-center gap-3 mb-4">
-      <img src={avatar} alt={name} className="w-8 h-8 rounded-full border border-black/10" />
+      <img
+        src={avatar}
+        alt={name}
+        className="w-8 h-8 rounded-full border border-black/10"
+      />
       <div>
         <div className="text-sm font-nunito text-black/80">{name}</div>
         <div className="text-xs font-nunito text-black/30">{location}</div>
       </div>
     </div>
-    <p className="text-sm lg:text-base font-nunito text-black leading-relaxed">{comment}</p>
+    <p className="text-sm lg:text-base font-nunito text-black leading-relaxed">
+      {comment}
+    </p>
   </div>
 );
 
 // FAQ item
 const FAQItem = ({ question }: { question: string }) => (
   <div className="border border-black/10 rounded-lg py-3 px-4 flex items-center justify-between">
-    <span className="text-sm lg:text-base font-nunito text-black">{question}</span>
+    <span className="text-sm lg:text-base font-nunito text-black">
+      {question}
+    </span>
     <ChevronRight className="w-5 h-5 text-black" />
   </div>
 );
@@ -166,9 +212,9 @@ const Newsletter = () => (
   <section className="py-16 lg:py-32">
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="relative bg-gradient-to-b from-black/0 to-black/10 rounded-3xl border border-black/10 overflow-hidden">
-        <img 
-          src="https://api.builder.io/api/v1/image/assets/TEMP/82e6b240c091094dec74ff269ce0992e82379823?width=2352" 
-          alt="" 
+        <img
+          src="https://api.builder.io/api/v1/image/assets/TEMP/82e6b240c091094dec74ff269ce0992e82379823?width=2352"
+          alt=""
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-10 py-24 lg:py-32 text-center">
@@ -179,8 +225,8 @@ const Newsletter = () => (
             Join the waitlist and get early access
           </p>
           <div className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
-            <input 
-              type="email" 
+            <input
+              type="email"
               placeholder="fancyemail@domain.com"
               className="flex-1 px-4 py-2 rounded-lg border border-black/10 text-sm font-nunito text-black/50"
             />
@@ -199,9 +245,9 @@ const Footer = () => (
   <footer className="bg-black/6 py-16 lg:py-20">
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex justify-center mb-12">
-        <img 
-          src="https://api.builder.io/api/v1/image/assets/TEMP/7e82dd3fb9765a29c4a1201a3b986cde6068e52c?width=224" 
-          alt="Romeo Travel" 
+        <img
+          src="https://api.builder.io/api/v1/image/assets/TEMP/7e82dd3fb9765a29c4a1201a3b986cde6068e52c?width=224"
+          alt="Romeo Travel"
           className="h-8 w-auto"
         />
       </div>
@@ -213,8 +259,8 @@ const Footer = () => (
           Join the waitinglist
         </p>
         <div className="flex gap-2">
-          <input 
-            type="email" 
+          <input
+            type="email"
             placeholder="fancyemail@domain.com"
             className="flex-1 px-4 py-2 rounded-lg bg-black/10 text-sm font-nunito text-black/40 placeholder-black/40"
           />
@@ -231,42 +277,42 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white font-nunito">
       <Navigation />
-      
+
       <Hero />
-      
+
       {/* Explore Mode Section */}
-      <FeatureSection 
+      <FeatureSection
         tag="Type of use"
         title="Explore Mode"
         description="Wander without maps. Romeo detects your location and tells you what no one ever explained about each street. Simple as that."
         images={[
           "https://api.builder.io/api/v1/image/assets/TEMP/cae8784647701c33b2c076a508834c837ec4a52d?width=800",
-          "https://api.builder.io/api/v1/image/assets/TEMP/f8558eb4847026d35e970f7819db2f7244f1ca49?width=800"
+          "https://api.builder.io/api/v1/image/assets/TEMP/f8558eb4847026d35e970f7819db2f7244f1ca49?width=800",
         ]}
       />
-      
+
       {/* Routes Mode Section */}
-      <FeatureSection 
+      <FeatureSection
         tag="Type of use"
         title="Routes Mode"
         description="Choose your ideal tour and let Romeo guide you with his voice—no maps needed."
         images={[
           "https://api.builder.io/api/v1/image/assets/TEMP/62f1ebd2397967e4555dbb8d634ef4ce316a142a?width=800",
-          "https://api.builder.io/api/v1/image/assets/TEMP/0a70ad55086d4dc607cb7f9622fa225b8ecc8be4?width=800"
+          "https://api.builder.io/api/v1/image/assets/TEMP/0a70ad55086d4dc607cb7f9622fa225b8ecc8be4?width=800",
         ]}
       />
-      
+
       {/* Phone mockup */}
       <div className="py-16 lg:py-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/911cf30fc9519edabbfb82763f0c90015aec45de?width=1568" 
-            alt="Romeo app mockup" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/911cf30fc9519edabbfb82763f0c90015aec45de?width=1568"
+            alt="Romeo app mockup"
             className="w-full max-w-3xl mx-auto rounded-3xl"
           />
         </div>
       </div>
-      
+
       {/* Features Section */}
       <section id="features" className="py-16 lg:py-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -304,7 +350,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-      
+
       {/* Testimonials Section */}
       <section id="testimonials" className="py-16 lg:py-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -316,13 +362,13 @@ export default function Index() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             <div className="space-y-3">
-              <TestimonialCard 
+              <TestimonialCard
                 name="Lucas Moretti"
                 location="Florence, Italy"
                 comment="During a walk in London, the app pointed out the spot where executions used to take place at Tower Hill — including the beheading of Anne Boleyn in 1536. I never imagined I'd be learning such dark but fascinating history just by strolling around."
                 avatar="https://api.builder.io/api/v1/image/assets/TEMP/aab4eb2e353122f0934039318e0386d7ebb963d5?width=66"
               />
-              <TestimonialCard 
+              <TestimonialCard
                 name="Olivia Carter"
                 location="Boston, USA"
                 comment="Everything flowed naturally as I walked around. The restaurant and museum recommendations were spot-on."
@@ -330,13 +376,13 @@ export default function Index() {
               />
             </div>
             <div className="space-y-3">
-              <TestimonialCard 
+              <TestimonialCard
                 name="María Fernández"
                 location="Seville, Spain"
                 comment="Tried the beta and it felt like having a personal guide in my pocket. Can't wait for the full release!"
                 avatar="https://api.builder.io/api/v1/image/assets/TEMP/ca62cc5f117a9551a38f413cd8eae610247cd2cf?width=66"
               />
-              <TestimonialCard 
+              <TestimonialCard
                 name="Sofia Almeida"
                 location="Lisbon, Portugal"
                 comment="I joined the beta expecting a nice little travel helper, but this went way beyond. I was really impressed by how smooth navigation was in the Explore mode and the way recommendations feel so personal. Honestly, I don't think I'll travel without it anymore."
@@ -344,13 +390,13 @@ export default function Index() {
               />
             </div>
             <div className="space-y-3">
-              <TestimonialCard 
+              <TestimonialCard
                 name="Mateo Rivas"
                 location="Buenos Aires, Argentina"
                 comment="What a pleasure. The information was clear and always relevant, and the list of events felt perfectly curated for my interests. I especially enjoyed how seamlessly it integrated with my walks — I could explore freely without ever feeling lost."
                 avatar="https://api.builder.io/api/v1/image/assets/TEMP/7d661d965139646fa7d450dd129b9c13a6d7a658?width=66"
               />
-              <TestimonialCard 
+              <TestimonialCard
                 name="Daniel Thompson"
                 location="Vancouver, Canada"
                 comment="Using the beta was a pleasure. Clear info, great events, and a team that truly listens to its users."
@@ -360,7 +406,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-      
+
       {/* FAQ Section */}
       <section id="faq" className="py-16 lg:py-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -372,7 +418,8 @@ export default function Index() {
                   Frequently asked questions
                 </h2>
                 <p className="text-base text-black/50 font-nunito mb-6">
-                  Can't find what you're looking for?<br />
+                  Can't find what you're looking for?
+                  <br />
                   Email us to: romeo@romeotravel.com
                 </p>
                 <button className="bg-[#FF6201] text-white px-6 py-2 rounded-full font-nunito font-semibold text-sm border border-white/20 hover:bg-[#e55601] transition-colors">
@@ -391,9 +438,9 @@ export default function Index() {
           </div>
         </div>
       </section>
-      
+
       <Newsletter />
-      
+
       <Footer />
     </div>
   );
