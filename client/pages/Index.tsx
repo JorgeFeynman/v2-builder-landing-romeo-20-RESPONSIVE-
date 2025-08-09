@@ -279,24 +279,24 @@ export default function Index() {
               Find the best things to do around you
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <FeatureCard 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <FeatureCard
               title="Live shows"
               description="Access the most local shows and events through the app."
               image="https://api.builder.io/api/v1/image/assets/TEMP/012518f7f3dd6881820eded5a36c8e61cf89dda8?width=1588"
               large
             />
-            <FeatureCard 
+            <FeatureCard
               title="Bars and Restaurants"
               description="Find the best bars and restaurants for your trip."
               image="https://api.builder.io/api/v1/image/assets/TEMP/c1e89377b2107fa47b1027648408c6e4f2053ab9?width=820"
             />
-            <FeatureCard 
+            <FeatureCard
               title="Museums"
               description="Reserve your spot at the top museums."
               image="https://api.builder.io/api/v1/image/assets/TEMP/bce857fe17256a61575f02da780b43476b745542?width=724"
             />
-            <FeatureCard 
+            <FeatureCard
               title="Local Gems"
               description="Go beyond the tourist trail and discover authentic local treasures."
               image="https://api.builder.io/api/v1/image/assets/TEMP/357064d24fdb48f0ff6699c5efcfdc8b0c2ddb0f?width=1588"
