@@ -249,7 +249,7 @@ export default function Index() {
       <FeatureSection 
         tag="Type of use"
         title="Routes Mode"
-        description="Elige la ruta que mejor se adapte a ti. Solo escucha y sigue la voz de Romeo."
+        description="Choose your ideal tour and let Romeo guide you with his voice—no maps needed."
         images={[
           "https://api.builder.io/api/v1/image/assets/TEMP/62f1ebd2397967e4555dbb8d634ef4ce316a142a?width=800",
           "https://api.builder.io/api/v1/image/assets/TEMP/0a70ad55086d4dc607cb7f9622fa225b8ecc8be4?width=800"
