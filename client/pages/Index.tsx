@@ -107,23 +107,23 @@ const FeatureSection = ({
 );
 
 // Feature cards
-const FeatureCard = ({ 
-  title, 
-  description, 
-  image, 
-  large = false 
-}: { 
+const FeatureCard = ({
+  title,
+  description,
+  image,
+  large = false
+}: {
   title: string;
   description: string;
   image: string;
   large?: boolean;
 }) => (
-  <div className={`bg-black/2 border border-black/10 rounded-3xl p-8 ${large ? 'col-span-2' : ''}`}>
+  <div className={`bg-black/[0.02] border border-black/10 rounded-3xl p-8 flex flex-col ${large ? 'md:col-span-2' : ''}`}>
     <div className="mb-6">
       <h3 className="text-xl font-bold text-black font-nunito mb-1">{title}</h3>
       <p className="text-sm text-black/50 font-nunito">{description}</p>
     </div>
-    <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden">
+    <div className="relative flex-1 min-h-[320px] rounded-lg overflow-hidden">
       <img src={image} alt={title} className="w-full h-full object-cover" />
     </div>
   </div>
@@ -238,7 +238,7 @@ export default function Index() {
       <FeatureSection 
         tag="Type of use"
         title="Explore Mode"
-        description="Pasea sin mapas. Romeo detecta tu ubicación y te cuenta lo que nadie te explicó de cada calle. Así de fácil."
+        description="Pasea sin mapas. Romeo detecta tu ubicación y te cuenta lo que nadie te explicó de cada calle. As�� de fácil."
         images={[
           "https://api.builder.io/api/v1/image/assets/TEMP/cae8784647701c33b2c076a508834c837ec4a52d?width=800",
           "https://api.builder.io/api/v1/image/assets/TEMP/f8558eb4847026d35e970f7819db2f7244f1ca49?width=800"
